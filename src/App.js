@@ -1,20 +1,25 @@
 //import { useState } from "react";
 import styled from "styled-components";
-//import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import GlobalStyle from "./styles/GlobalStyles";
 import HomePage from "./pages/HomePage/HomePage";
+import RegisterPage from "./pages/RegisterPage/RegisterPage";
 
 
 
 
 function App() {
   return (
-    <>
-      <GlobalStyle/>
+    <BrowserRouter>
+      <GlobalStyle />
       <StyledAppContainer>
-        <HomePage/>        
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/cadastro" element={<RegisterPage />} />
+        </Routes>
+        
       </StyledAppContainer>
-    </>
+    </BrowserRouter>
   );
 }
 

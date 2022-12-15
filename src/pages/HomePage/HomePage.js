@@ -2,19 +2,29 @@ import React from "react";
 import Container from "../../common/styles";
 import styled from "styled-components";
 import Logo from "../../assets/Logo.png";
+import RegisterPage from "../RegisterPage/RegisterPage";
+import { Link } from "react-router-dom";
 
 function HomePage() {
+  const cadastrado = true;
+
   return (
     <Container>
-      <StyledHomePage>
-        <img src={Logo} alt="Logo"></img>
-        <form>
-          <input type="email" placeholder="E-mail" required />
-          <input type="password" placeholder="Senha" required />
-          <button type="submit">Entrar</button>
-        </form>
-        <p>Não tem uma conta? Cadastre-se!</p>
-      </StyledHomePage>
+      {!cadastrado ? (
+        <RegisterPage />
+      ) : (
+        <StyledHomePage>
+          <img src={Logo} alt="Logo"></img>
+          <form>
+            <input type="email" placeholder="E-mail" required />
+            <input type="password" placeholder="Senha" required />
+            <button type="submit">Entrar</button>
+          </form>
+          <Link to="/cadastro">
+          <p>Não tem uma conta? Cadastre-se!</p>
+          </Link>
+        </StyledHomePage>
+      )}
     </Container>
   );
 }

@@ -9,7 +9,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   background-color: white;
-  
+
   * {
     box-sizing: border-box;
     font-family: "Lexend Deca", sans-serif;
@@ -35,6 +35,10 @@ const Container = styled.div`
     :hover {
       cursor: pointer;
     }
+  }
+
+  a{
+    text-decoration: none;
   }
 
   input {
