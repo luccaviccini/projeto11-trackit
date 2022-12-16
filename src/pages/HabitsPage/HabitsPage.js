@@ -15,11 +15,12 @@ export function HabitsPage() {
           <h1>Meus hábitos</h1>
           <button>+</button>
         </StyledAddHabits>
+        <AddHabit />
         <StyledNoHabitTxt>
           Você não tem nenhum hábito cadastrado ainda. Adicione um hábito para
           começar a trackear!
         </StyledNoHabitTxt>
-        <AddHabit />
+
         <Footer />
       </StyledHabitsPage>
     </Container>
