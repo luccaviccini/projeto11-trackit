@@ -6,7 +6,7 @@ import GlobalStyle from "./styles/GlobalStyles";
 
 import HomePage from "./pages/HomePage/HomePage";
 import RegisterPage from "./pages/RegisterPage/RegisterPage";
-import HabitsPage from "./pages/HabitsPage/HabitsPage";
+import {HabitsPage} from "./pages/HabitsPage/HabitsPage";
 
 
 

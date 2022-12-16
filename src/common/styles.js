@@ -1,7 +1,7 @@
 
 import styled from 'styled-components';
 
-const Container = styled.div`
+export const Container = styled.div`
   max-width: inherit;
   width: 100vw;
   height: 100vh;
@@ -58,4 +58,3 @@ const Container = styled.div`
   }
 `;
 
-export default Container;

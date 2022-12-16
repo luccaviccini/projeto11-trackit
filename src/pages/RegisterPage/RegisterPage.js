@@ -1,5 +1,5 @@
 import React from 'react';
-import Container from "../../common/styles";
+import {Container} from "../../common/styles";
 import styled from "styled-components";
 import Logo from "../../assets/Logo.png";
 
