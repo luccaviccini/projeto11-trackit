@@ -3,6 +3,7 @@ import { Container } from "../../common/styles";
 import styled from "styled-components";
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
+import AddHabit from "./AddHabit"
 
 
 export function HabitsPage() {
@@ -18,7 +19,7 @@ export function HabitsPage() {
           Você não tem nenhum hábito cadastrado ainda. Adicione um hábito para
           começar a trackear!
         </StyledNoHabitTxt>
-
+        <AddHabit />
         <Footer />
       </StyledHabitsPage>
     </Container>
@@ -35,8 +36,6 @@ const StyledHabitsPage = styled.div`
   align-items: center;
   margin: 70px 0px;
   padding: 0px 18px;
-  
- 
 
 `
 const StyledAddHabits = styled.div`
